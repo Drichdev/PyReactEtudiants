@@ -8,7 +8,7 @@ resultsExportEtudiants = []
 
 def getetudiants():
     del resultsExportEtudiants[:]
-    sql = "SELECT * FROM t_etudiant"
+    sql = "SELECT * FROM etudiant"
     try:
         cursor.execute(sql)
         results = cursor.fetchall()
@@ -33,7 +33,7 @@ def getetudiants():
 
 
 def createetudiant(etudiant):
-    sql = "Insert into t_etudiant(matricule, nom, prenom) values('%s', '%s', '%s')" % (etudiant['matricule'], etudiant['nom'], etudiant['prenom'])
+    sql = "Insert into etudiant(matricule, nom, prenom) values('%s', '%s', '%s')" % (etudiant['matricule'], etudiant['nom'], etudiant['prenom'])
     try:
         cursor.execute(sql)
         db.commit()

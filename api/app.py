@@ -16,7 +16,7 @@ items = []
 def get_etudiants():
     db.getetudiants()
     result = db.resultsExportEtudiants
-    print (result)
+    print(result)
     return jsonify({'item': result}), 201
 
 
