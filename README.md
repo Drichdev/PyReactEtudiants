@@ -1,3 +1,3 @@
-## PyReactEtudiants
+## PyJsEtudiants
 
-### React FrontEnd and python flask api
+### Js FrontEnd and python flask api
