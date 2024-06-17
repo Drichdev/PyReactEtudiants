@@ -5,10 +5,12 @@ import subprocess
 import db
 
 from flask import Flask, jsonify, request, abort
+from flask_cors import CORS
 
 warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
+CORS(app)
 
 items = []
 
